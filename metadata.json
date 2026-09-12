@@ -1,0 +1,6 @@
+{
+  "name": "Firewall Port Status Checker — Nmap-Based Security Scanner",
+  "description": "A professional terminal-style firewall and network port security scanner powered by Nmap with real-time telemetry, best-effort provenance tracking, and risk analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

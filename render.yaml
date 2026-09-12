@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: firewall-port-scanner
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MAX_CONCURRENT_SCANS
+        value: "2"
+      - key: MAX_TARGETS_PER_SCAN
+        value: "16"
+      - key: SCAN_TIMEOUT_SECONDS
+        value: "900"
+      - key: GLOBAL_RATE_LIMIT
+        value: "60"
+      - key: NVD_API_KEY
+        sync: false
